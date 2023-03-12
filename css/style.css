@@ -33,7 +33,7 @@ body {
 }
 .main {
     background-color: rgba(255, 255, 255, 0.315);
-    height: 442px;
+    height: 484px;
     margin: 15px;
     border-radius: 30px;
     display: flex;
@@ -44,6 +44,8 @@ body {
     font-size: 20px;
     font-weight: 400;
     width: fit-content;
+    display: grid;
+    justify-items: center;
     padding: 20px;
     height: fit-content;
 
@@ -71,4 +73,5 @@ input{
     border-radius: 10px;
     background: #abe75b;
     padding: 15px;
+    width: 150px;
 }

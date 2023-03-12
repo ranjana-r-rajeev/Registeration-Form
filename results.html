@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Results</title>
 </head>
 <body>
-    <div id="results"></div>
-    <a href="/">Back to Form</a>
-    <script>
-        const resultsList = document.getElementById('results');
-        const params = new URLSearchParams(window.location.search);
-        const registrationData = {};
-        
-        // Collect registration data from the URL parameters
-        registrationData.firstname = params.get('firstname');
-        registrationData.lastname = params.get('lastname');
-        registrationData.gender = params.get('gender');
-        registrationData.phone = params.get('phone');
-        registrationData.date = params.get('date');
-        registrationData.address = params.get('address');
-        registrationData.email = params.get('email');
-        
-        // Store registration data in Local Storage
-        localStorage.setItem('registrationData', JSON.stringify(registrationData));
-        
-        // Display registration data on the results page
-        Object.entries(registrationData).forEach(([key, value]) => {
-          const result = `${key}: ${value}`;
-          resultsList.append(result);
-          resultsList.append(document.createElement('br'));
-        });
-      </script>
-    
+  <h1>Registration Results</h1>
+  <div>
+    <h3>User Information:</h3>
+    <ul>
+      <li><strong>First Name:</strong> <span id="firstName"></span></li>
+      <li><strong>Last Name:</strong> <span id="lastName"></span></li>
+      <li><strong>Date of Birth:</strong> <span id="dob"></span></li>
+      <li><strong>Gender:</strong> <span id="gender"></span></li>
+      <li><strong>Address:</strong> <span id="address"></span></li>
+      <li><strong>Phone:</strong> <span id="phone"></span></li>
+      <li><strong>Email:</strong> <span id="email"></span></li>
+      <li><strong>Password:</strong> <span id="password"></span></li>
+    </ul>
+  </div>
+  <script>
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    document.getElementById('firstName').textContent = userData.firstName;
+    document.getElementById('lastName').textContent = userData.lastName;
+    document.getElementById('dob').textContent = userData.dob;
+    document.getElementById('gender').textContent = userData.gender;
+    document.getElementById('address').textContent = userData.address;
+    document.getElementById('phone').textContent = userData.phone;
+    document.getElementById('email').textContent = userData.email;
+    document.getElementById('password').textContent = userData.password;
+  </script>
 </body>
 </html>
