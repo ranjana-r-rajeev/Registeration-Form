@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="main">
-      <form action="results.html" class="form" method="get">
+      <form action="results.html" class="form" method="post">
         <div class="row">
           <label for="">Name: </label> <br>
           <div class="col">
@@ -33,10 +33,10 @@
           </div>
           <label for="gender">Gender: </label>  <br>
           <div class="col">
-            <label for="Male">Male</label>
             <input type="radio" class="form-control" id="Male" name="gender" value="Male">
-            <label for="Female">Female</label>
+            <label for="Male">Male</label>
             <input type="radio" class="form-control" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label>
           </div>
         </div>
         <div class="row">
@@ -46,9 +46,11 @@
           </div>  
         </div>
         <div class="row">
+          <label for="">Email:</label> <br>
           <div class="col">
             <input type="text" name="email" class="form-control" placeholder="Email" required/>
           </div>
+          <label for="">Password :</label> <br>
           <div class="col">
             <input type="password" class="form-control" placeholder="Password" required/> 
           </div>
@@ -57,14 +59,9 @@
           <input type="checkbox" id="Check" required/>
           <label for="signupCheck">All the above informations are correct</label>
         </div>
-        <input type="submit" class="" value="Register"/>
-
-
+        <input type="submit" class="btn" value="Register"/>
       </form>
-
     </div>
-        
-
     </div>
 
   <script src="/java.js"></script>
