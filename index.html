@@ -18,6 +18,7 @@
     </div>
     <div class="main">
       <form action="results.html" class="form" method="post">
+        <header><b>Registration of CST</b></header>
         <div class="row">
           <label for="">Name: </label> <br>
           <div class="col">
@@ -45,26 +46,51 @@
           <div class="col">
             <input type="text" class="form-control" name="address" placeholder="Address" aria-label="" required>
           </div> 
-          <label for="">Phone : </label> <br>
+          <label for="">Phone: </label> <br>
           <div class="col">
             <input type="number" class="form-control" name="phone" placeholder="Mobile No." aria-label="Phone" required>
           </div> 
         </div>
         <div class="row">
-          <label for="">Email:</label> <br>
+          <label for="">Course:</label> <br>
           <div class="col">
-            <input type="text" name="email" class="form-control" placeholder="Email" required/>
+            <select class="form-control" name="course" aria-label="Default select example" >
+              <option selected>Select</option>
+              <option value="1">MCA</option>
+              <option value="2">MSC(MATHS)</option>
+              <option value="3">MSC(BOTANY)</option>
+              <option value="4">MBA</option>
+              <option value="5">MSCI</option>
+              <option value="6">MCOM</option>
+            </select>
           </div>
-          <label for="">Password :</label> <br>
+          <label for="">Year</label>
           <div class="col">
-            <input type="password" class="form-control" placeholder="Password" required/> 
+            <select class="form-control" name="year" aria-label="Default select example" >
+              <option selected>Select</option>
+              <option value="1">First Year</option>
+              <option value="2">Second Year</option>
+              <option value="3">Third Year</option>
+            </select>
           </div>
         </div>
         <div class="row">
-          <input type="checkbox" id="Check" required/>
+          <label for="">Email:</label> <br>
+          <div class="col">
+            <input type="text" name="email" class="form-control" placeholder="Email" required>
+          </div>
+          <label for="">Password:</label> <br>
+          <div class="col">
+            <input type="password" class="form-control" placeholder="Password" required> 
+          </div>
+        </div>
+        <div class="row">
+          <input type="checkbox" id="Check" required>
           <label for="signupCheck">All the above informations are correct</label>
         </div>
-        <button type="submit" class="btn">Register</button>
+        <div class="button">
+          <button type="submit" class="btn">Register</button>
+        </div>
       </form>
     </div>
     </div>
