@@ -4,7 +4,7 @@ body {
     overflow-y: hidden;
 }
 .titlebar {
-    height: 80px;
+    height: 30px;
     width: 100%;
     margin: 0%;
     display: flex;
@@ -20,11 +20,11 @@ body {
     margin: 0px 0px 0px 0px;
 }
 .pic {
-    height: 90px;
+    height: 43px;
 }
 .back{
     margin-top: 60px;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-image: url('../images/goa-university.jpg');
     background-repeat: no-repeat;
@@ -44,8 +44,9 @@ header {
     border-radius: 30px;
     font-size: 1.5em;
     width: fit-content;
-    padding: 30px;
+    padding: 17px;
     margin: auto;
+    height: fit-content;
 }
 .row {
     display: flex;
@@ -72,9 +73,20 @@ input{
     border-radius: 10px;
     background: #abe75b;
     padding: 15px;
+    border: 0;
     width: 250px;
     font-size: 0.8em;
 }
 .button {
     margin-left: 10em;
+}
+
+.btn:hover{
+    border-radius: 10px;
+    background: #3f448f;
+    color: #fff;
+    border: 0;
+    padding: 15px;
+    width: 250px;
+    font-size: 0.8em;
 }

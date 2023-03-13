@@ -12,6 +12,8 @@
     const gender = form.querySelector('[name="gender"]:checked').value;
     const address = form.querySelector('[name="address"]').value;
     const phone = form.querySelector('[name="phone"]').value;
+    const course = form.querySelector('[name="course"]').value;
+    const year = form.querySelector('[name="year"]').value;
     const email = form.querySelector('[name="email"]').value;
     const password = form.querySelector('[type="password"]').value;
     
@@ -22,6 +24,8 @@
       dob,
       gender,
       address,
+      course,
+      year,
       phone,
       email,
       password
