@@ -1,9 +1,10 @@
 body {
     padding: 0;
     margin: 0;
+    overflow-y: scroll;
 }
 .titlebar {
-    height: 90px;
+    height: 80px;
     width: 100%;
     margin: 0%;
     display: flex;
@@ -51,7 +52,7 @@ header {
     align-items: center;
 }
 .form-control {
-    padding: 15px;
+    padding: 10px;
     border-radius: 30px;
     font-size: large;
     box-sizing: border-box;
